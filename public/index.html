@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="10">
+    <title>Painel do Dólar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="painel">
+        <header class="topo">
+            <div>
+                <h1>Painel do Dólar</h1>
+                <p class="descricao">Dólar americano em reais, direto da AwesomeAPI</p>
+            </div>
+            <span id="status" class="status">Carregando...</span>
+        </header>
+        <section id="cartoes" class="cartoes"></section>
+        <section class="bloco">
+            <h2>Onde o dólar está hoje</h2>
+            <div class="faixa">
+                <div class="faixa-trilho">
+                    <div id="faixa-marcador" class="faixa-marcador"></div>
+                </div>
+                <div class="faixa-legenda">
+                    <span id="faixa-min">--</span>
+                    <span id="faixa-max">--</span>
+                </div>
+            </div>
+            <p id="amplitude" class="texto-apoio"></p>
+        </section>
+
+        <section class="bloco">
+            <h2>Conversor</h2>
+            <div class="conversor">
+                <label for="entrada-dolar">Valor em dólar (US$)</label>
+                <input type="number" id="entrada-dolar" min="0" step="0.01" value="100">
+                <p id="resultado-conversao" class="resultado">--</p>
+            </div>
+        </section>
+
+        <section class="bloco">
+            <h2>Para comparar</h2>
+            <div id="outras-moedas" class="outras-moedas"></div>
+        </section>
+
+        <footer id="rodape" class="rodape"></footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
